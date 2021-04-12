@@ -9,9 +9,9 @@
 *   Explicit consent requires a very clear and specific statement of consent.
 *   Link To Cookie Policy Information
 
-## Outstanding
+## Not Included
 
 *   Age Verification
-*   Recording of Consent To Manage DB
-* 
+*   Recording of consent to a managed DB
+  
   
