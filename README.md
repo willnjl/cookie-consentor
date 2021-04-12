@@ -11,6 +11,7 @@
 
 ## Outstanding
 
-
-*   
+*   Age Verification
+*   Recording of Consent To Manage DB
+* 
   
