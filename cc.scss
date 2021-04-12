@@ -1,0 +1,225 @@
+/* ---------------------------
+*
+*
+*
+*  Cookie Consent
+*
+*
+*
+---------------------------- */
+
+/* Popup Container Settings */
+$popup-right: 0;
+$popup-left: unset;
+$popup-margin: 1rem;
+$popup-padding: 2rem;
+$popup-bgColor: #eeeeee;
+$popup-color: black;
+$popup-max-width: 500px;
+$popup-border: 1px solid black;
+$popup-bradius: 20px;
+$link-color: #00b6af;
+$link-color--hover: #0056b3;
+/* Both Buttons */
+$btn-font-weight: 600;
+$btn-width: 200px;
+$btn-pad: 15px;
+$btn-bradius: 5px;
+
+/* Accept */
+$btn-accept-border: 0;
+$btn-accept-color: white;
+$btn-accept-bgColor: orange;
+$btn-accept-color--hover: white;
+$btn-accept-bgColor--hover: green;
+/* Reject */
+$btn-reject-border: 0;
+$btn-reject-color: #2e3031;
+$btn-reject-bgColor: transparent;
+$btn-reject-color--hover: #104f69;
+$btn-reject-bgColor--hover: transparent;
+
+/* Cookies Popup */
+#cookie-popup > .btn-container {
+  display: flex;
+}
+#cookie-popup {
+  opacity: 0;
+  text-align: center;
+  z-index: 9999;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  border: $popup-border;
+  border-radius: $popup-bradius;
+  margin: $popup-margin;
+  padding: $popup-padding;
+  color: $popup-color;
+  background-color: $popup-bgColor;
+  max-width: $popup-max-width;
+  right: $popup-right;
+  left: $popup-left;
+  box-shadow: 2px 2px 2px;
+  transition: opacity 1s;
+}
+#cookie-popup > a {
+  display: block;
+  text-decoration: underline;
+  margin: 1rem 0rem;
+  color: $link-color;
+}
+#cookie-popup > a:hover {
+  color: $link-color--hover;
+  text-decoration: underline;
+}
+
+#cookie-popup > .btn-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#cookie-popup .btn {
+  font-weight: $btn-font-weight;
+  cursor: pointer;
+  margin: 4px;
+  flex: 1;
+  border-radius: $btn-bradius;
+  max-width: $btn-width;
+  padding: $btn-pad;
+}
+#cookie-popup .btn-accept {
+  color: $btn-accept-color;
+  border: $btn-accept-border;
+  background-color: $btn-accept-bgColor;
+}
+#cookie-popup .btn-accept:hover {
+  color: $btn-accept-color--hover;
+  background-color: $btn-accept-bgColor--hover;
+}
+#cookie-popup .btn-reject {
+  border: $btn-reject-border;
+  color: $btn-reject-color;
+  background-color: $btn-reject-bgColor;
+}
+#cookie-popup .btn-reject:hover {
+  color: $btn-reject-color--hover;
+  background-color: $btn-reject-bgColor--hover;
+}
+
+@media screen and (max-width: 600px) {
+  #cookie-popup {
+    max-width: 100%;
+  }
+} /* ---------------------------
+*
+*
+*
+*  Cookie Consent
+*
+*
+*
+---------------------------- */
+
+/* Popup Container Settings */
+$popup-right: 0;
+$popup-left: unset;
+$popup-margin: 1rem;
+$popup-padding: 2rem;
+$popup-bgColor: #eeeeee;
+$popup-color: black;
+$popup-max-width: 500px;
+$popup-border: 1px solid black;
+$popup-bradius: 20px;
+$link-color: #00b6af;
+$link-color--hover: #0056b3;
+/* Both Buttons */
+$btn-font-weight: 600;
+$btn-width: 200px;
+$btn-pad: 15px;
+$btn-bradius: 5px;
+
+/* Accept */
+$btn-accept-border: 0;
+$btn-accept-color: white;
+$btn-accept-bgColor: orange;
+$btn-accept-color--hover: white;
+$btn-accept-bgColor--hover: green;
+/* Reject */
+$btn-reject-border: 0;
+$btn-reject-color: #2e3031;
+$btn-reject-bgColor: transparent;
+$btn-reject-color--hover: #104f69;
+$btn-reject-bgColor--hover: transparent;
+
+/* Cookies Popup */
+#cookie-popup > .btn-container {
+  display: flex;
+}
+#cookie-popup {
+  opacity: 0;
+  text-align: center;
+  z-index: 9999;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  border: $popup-border;
+  border-radius: $popup-bradius;
+  margin: $popup-margin;
+  padding: $popup-padding;
+  color: $popup-color;
+  background-color: $popup-bgColor;
+  max-width: $popup-max-width;
+  right: $popup-right;
+  left: $popup-left;
+  box-shadow: 2px 2px 2px;
+  transition: opacity 1s;
+}
+#cookie-popup > a {
+  display: block;
+  text-decoration: underline;
+  margin: 1rem 0rem;
+  color: $link-color;
+}
+#cookie-popup > a:hover {
+  color: $link-color--hover;
+  text-decoration: underline;
+}
+
+#cookie-popup > .btn-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#cookie-popup .btn {
+  font-weight: $btn-font-weight;
+  cursor: pointer;
+  margin: 4px;
+  flex: 1;
+  border-radius: $btn-bradius;
+  max-width: $btn-width;
+  padding: $btn-pad;
+}
+#cookie-popup .btn-accept {
+  color: $btn-accept-color;
+  border: $btn-accept-border;
+  background-color: $btn-accept-bgColor;
+}
+#cookie-popup .btn-accept:hover {
+  color: $btn-accept-color--hover;
+  background-color: $btn-accept-bgColor--hover;
+}
+#cookie-popup .btn-reject {
+  border: $btn-reject-border;
+  color: $btn-reject-color;
+  background-color: $btn-reject-bgColor;
+}
+#cookie-popup .btn-reject:hover {
+  color: $btn-reject-color--hover;
+  background-color: $btn-reject-bgColor--hover;
+}
+
+@media screen and (max-width: 600px) {
+  #cookie-popup {
+    max-width: 100%;
+  }
+}
