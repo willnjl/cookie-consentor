@@ -14,9 +14,9 @@
         .reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value }), {});
       return cookies[item];
     },
-    deleteItem: (item) => {
-      const expired = "exires=Thu, 01 Jan 1970 00:00:01 GMT";
-      document.cookie = `${item}=;${expired}`;
+    deleteItem: ({ name, domain }) => {
+      const expired = "Expires=Thu, 01 Jan 1970 00:00:01 GMT";
+      document.cookie = `${name}=; Path=/; Domain=${domain}; ${expired}; `;
     },
     setItem: (item, value, exdays) => {
       let date = new Date();
@@ -80,7 +80,21 @@
   const removeCookiesBtn = d.getElementById("remove-cookies-btn");
   if (removeCookiesBtn) {
     removeCookiesBtn.addEventListener("click", () => {
-      const cookiesToRemove = ["tracking", "ads", "google"]; // names of cookies to be removed
+      let domain = "example.com";
+      const cookiesToRemove = [
+        {
+          name: "tracking",
+          domain,
+        },
+        {
+          name: "ads",
+          domain,
+        },
+        {
+          name: "google",
+          domain,
+        },
+      ]; // names of cookies to be removed
       // Remove Cookies
       cookiesToRemove.forEach((cookie) => cookieStorage.deleteItem(cookie));
       // Set Consent To False
